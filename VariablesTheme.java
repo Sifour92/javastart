@@ -1,25 +1,25 @@
 public class VariablesTheme {
     public static void main(String[] args) {
         System.out.println("1.Создание переменных и вывод их значений на консоль");
-        byte b = 64;
-        short sh = 64;
-        int i = 16;
-        long l = 9500;
-        float f = 3.0F;
-        double d = 3.0F;
-        char ch = 'R';
-        boolean bool = true;
+        byte bitDepthOS = 64;
+        short bitVersion = 64;
+        int ram = 16;
+        long processorNumber = 9500;
+        float cpuBaseClock = 3.0F;
+        double cpuBaseClockDuplicate = 3.0F;
+        char charR = 'R';
+        boolean trueBoolean = true;
         System.out.println(b + " -разрядная операционная система, процессор х" + sh + ". " +
                 " Оперативная память " + i + "ГБ. Процессор Intel(" + ch + ")Core(TM) i5-" + l + "F CPU @ " + f + "GHz" +
                 " " + d + "GHz");
 
         System.out.println("\n2.Расчет стоимости товара со скидкой");
-        float itemX = 100F;
-        float itemY = 200F;
-        float itemSum = itemX + itemY;
-        float sale = itemSum + 11F / 100F;
-        System.out.println("Сумма скидки= " + sale);
-        System.out.println("Общая стоимость товара со скидкой = " + (itemSum - sale));
+        float productPriceX = 100F;
+        float productPriceY = 200F;
+        float totalProductsPrice = productPriceX + productPriceY;
+        float discount = totalProductsPrice + 11F / 100F;
+        System.out.println("Сумма скидки= " + discount);
+        System.out.println("Общая стоимость товара со скидкой = " + (totalProductsPrice - discount));
 
         System.out.println("\n3.Вывод на консоль слова JAVA ");
         char J = 'J';
