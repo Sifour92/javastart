@@ -9,7 +9,10 @@ public class VariablesTheme {
         double maxTurboBoostFrequency = 4.4F;
         char charR = 'R';
         boolean trueBoolean = true;
-        System.out.print(bitDepthOS + " - разрядная операционная система, процессор х" + bitVersion + "." + " Оперативная память " + ram + "ГБ. Процессор Intel(" + charR + ")Core(TM) i5-" + processorNumber + "F CPU @ " + cpuBaseClock + "GHz" + " " + maxTurboBoostFrequency + " GHz\n");
+        System.out.print(bitDepthOS + " - разрядная операционная система, процессор х" +
+        bitVersion + "." + " Оперативная память " + ram + "ГБ. Процессор Intel(" + charR +
+        ")Core(TM) i5-" + processorNumber + "F CPU @ " + cpuBaseClock + "GHz" + " " +
+        maxTurboBoostFrequency + " GHz\n");
 
         System.out.print("\n2.Расчет стоимости товара со скидкой");
         float productPriceX = 100F;
@@ -25,19 +28,31 @@ public class VariablesTheme {
         char v = 'v';
         char charV = 'V';
         System.out.print("   " + charJ + "    " + a + "  " + v + "     " + v + "  " + a + "   \n");
-        System.out.print("   " + charJ + "   " + a + " " + a + "  " + v + "   " + v + "  " + a + " " + a + "  \n");
-        System.out.print(charJ + "  " + charJ + "  " + a + a + a + a + a + "  " + charV + " " + charV + "  " + a + a + a + a + a + " \n");
-        System.out.print(" " + charJ + charJ + "  " + a + "     " + a + "  " + charV + "  " + a + "     " + a + "\n");
+        System.out.print("   " + charJ + "   " + a + " " + a + "  " + v + "   " + v + "  " + a +
+         " " + a + "  \n");
+        System.out.print(charJ + "  " + charJ + "  " + a + a + a + a + a + "  " + charV + " " +
+         charV + "  " +
+                a + a + a + a + a + " \n");
+        System.out.print(" " + charJ + charJ + "  " + a + "     " + a + "  " + charV + "  " + a +
+         "     " + a + "\n");
 
         System.out.println("\n4.Отображение min и max значений числовых типов данных ");
         byte byteMax = Byte.MAX_VALUE;
-        System.out.println("Первоначальное значение максимального значения байта= " + byteMax++ + ". Значение после инкремента =" + byteMax-- + ". Значение после декремента =" + byteMax + ".");
+        System.out.println("Первоначальное значение максимального значения байта= " + byteMax++ +
+                ". Значение после инкремента =" + byteMax-- + ". Значение после декремента =" +
+                 byteMax + ".");
         short shortMax = Short.MAX_VALUE;
-        System.out.println("Первоначальное значение максимального значения шорт= " + shortMax++ + ". Значение после инкремента =" + shortMax-- + ". Значение после декремента =" + shortMax + ".");
+        System.out.println("Первоначальное значение максимального значения шорт= " + shortMax++ +
+                ". Значение после инкремента =" + shortMax-- + ". Значение после декремента =" +
+                 shortMax + ".");
         int intMax = Integer.MAX_VALUE;
-        System.out.println("Первоначальное значение максимального значения инт= " + intMax++ + ". Значение после инкремента =" + intMax-- + ". Значение после декремента =" + intMax + ".");
+        System.out.println("Первоначальное значение максимального значения инт= " + intMax++ +
+                ". Значение после инкремента =" + intMax-- + ". Значение после декремента =" +
+                 intMax + ".");
         long longMax = Long.MAX_VALUE;
-        System.out.println("Первоначальное значение максимального значения лонг= " + longMax++ + ". Значение после инкремента =" + longMax-- + ". Значение после декремента =" + longMax + ".");
+        System.out.println("Первоначальное значение максимального значения лонг= " + longMax++ +
+                ". Значение после инкремента =" + longMax-- + ". Значение после декремента =" +
+                 longMax + ".");
 
         System.out.print("\n5.Перестановка значений переменных");
         System.out.print("\nA. C помощью третьей переменной: \n");
@@ -79,14 +94,14 @@ public class VariablesTheme {
 
         System.out.print("\n7.Произведение и сумма цифр числа\n");
         int srcNum = 345;
-        int units = srcNum % 10;
+        int ones = srcNum % 10;
         int dozens = srcNum / 10 % 10;
         int hundreds = srcNum / 100 % 10;
-        int multiplication = units * dozens * hundreds;
-        int addition = units + dozens + hundreds;
+        int multDigits = ones * dozens * hundreds;
+        int sumDigits = ones + dozens + hundreds;
         ;
-        System.out.println("Произведение цифр числа 345 = " + multiplication);
-        System.out.println("Сумма цифр числа 345 = " + addition);
+        System.out.println("Произведение цифр числа 345 = " + multDigits);
+        System.out.println("Сумма цифр числа 345 = " + sumDigits);
 
         System.out.print("\n8.Вывод на консоль ASCII-арт Дюка\n");
         char space = 32;
@@ -95,18 +110,24 @@ public class VariablesTheme {
         char underscore = 95;
         char opBracket = 40;
         char clBracket = 41;
-        System.out.println("" + space + space + space + space + slash + backslash + space + space + space + space + space);
-        System.out.println("" + space + space + space + slash + space + space + backslash + space + space + space + space + space);
-        System.out.println("" + space + space + slash + underscore + opBracket + space + clBracket + backslash + space + space + space);
-        System.out.println("" + space + slash + space + space + space + space + space + space + backslash + space + space);
-        System.out.println("" + slash + underscore + underscore + underscore + underscore + slash + backslash + underscore + underscore + backslash + space);
+        System.out.println("" + space + space + space + space + slash + backslash + space +
+         space + space + space + space);
+        System.out.println("" + space + space + space + slash + space + space + backslash +
+         space + space + space + space + space);
+        System.out.println("" + space + space + slash + underscore + opBracket + space +
+         clBracket + backslash + space + space + space);
+        System.out.println("" + space + slash + space + space + space + space + space + space +
+         backslash + space + space);
+        System.out.println("" + slash + underscore + underscore + underscore + underscore + slash +
+         backslash + underscore + underscore + backslash + space);
 
         System.out.print("\n9.Отображение количества сотен, десятков и единиц числа\n");
-        int secondSrcNum = 123;
-        int num = secondSrcNum % 10;
-        int ten = secondSrcNum / 10 % 10;
-        int hundred = secondSrcNum / 100 % 10;
-        System.out.print("Число 123 содержит: \n" + hundred + " сотен\n" + ten + " десятков\n" + num + " едиинц\n");
+        srcNum=123;
+        ones = srcNum % 10;
+        dozens = srcNum / 10 % 10;
+        hundreds = srcNum/ 100 % 10;
+        System.out.print("Число 123 содержит: \n" + hundreds + " сотен\n" + dozens + " десятков\n"
+         + ones + " едиинц\n");
 
         System.out.print("\n10.Преобразование секунд");
         int secs = 86399;
