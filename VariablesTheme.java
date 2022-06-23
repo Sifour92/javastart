@@ -125,7 +125,7 @@ public class VariablesTheme {
         dozens = srcNum / 10 % 10;
         hundreds = srcNum / 100;
         System.out.print("\nЧисло 123 содержит: \n" + hundreds + " сотен\n" + dozens +
-                " десятков\n" + ones + " едининц");
+                " десятков\n" + ones + " единиц");
 
         System.out.print("\n\n10.Преобразование секунд");
         int secs = 86399;

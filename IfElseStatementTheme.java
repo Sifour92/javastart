@@ -105,12 +105,12 @@ public class IfElseStatementTheme {
         System.out.print("\n\n5.Определение буквы, числа или символа по их коду");
         char someChar = '\u0057';
         if (someChar >= 48 && someChar <= 57) {
-            System.out.print("\nCимвол " + someChar + " это число.");
+            System.out.print("\nСимвол " + someChar + " это число.");
         } else if (someChar >= 65 && someChar <= 90 ||
                 someChar >= 97 && someChar <= 122 ||
                 someChar >= 128 && someChar <= 175 ||
                 someChar >= 224 && someChar <= 241) {
-            System.out.print("\nCимвол " + someChar + " это маленькая (большая) буква.");
+            System.out.print("\nСимвол " + someChar + " это маленькая (большая) буква.");
         } else {
             System.out.print("\nНе буква и не число");
         }
@@ -126,8 +126,8 @@ public class IfElseStatementTheme {
             percent=10;
         }
         int annualInterest = depositAmount * percent / 100;
-        System.out.print("\nCумма вклада = " + depositAmount + ". Начисленный проц = " +
-                annualInterest + ". Cумvа с проц = " + (depositAmount + annualInterest) + ".");
+        System.out.print("\nСумма вклада = " + depositAmount + ". Начисленный проц = " +
+                annualInterest + ". Сумма с проц = " + (depositAmount + annualInterest) + ".");
 
         System.out.print("\n\n7.Определение оценки по предметам");
         int historyPercent = 59;
@@ -190,7 +190,8 @@ public class IfElseStatementTheme {
             amountBanknotesOne += difference * 10;
         }
         amountBanknotesHundred = hundreds;
-        withdrawalAmount = amountBanknotesOne + (amountBanknotesTen * 10) + (amountBanknotesHundred * 100);
+        withdrawalAmount = amountBanknotesOne + (amountBanknotesTen * 10) +
+                (amountBanknotesHundred * 100);
         System.out.println("Номиналы банкнот: " + banknoteDenominationOfOne + " " +
                 banknoteDenominationOfTen + " " + banknoteDenominationOfHundred);
         System.out.println("Требуемое количество банкнот номиналом " +
