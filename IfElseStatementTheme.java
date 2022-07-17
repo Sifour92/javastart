@@ -48,7 +48,7 @@ public class IfElseStatementTheme {
             }
             if (anyNumber % 2 == 0) {
                 System.out.print("\nЧисло " + anyNumber + " четное");
-            } else if (anyNumber % 2 != 0) {
+            } else {
                 System.out.print("\nЧисло " + anyNumber + " не четное");
             }
         } else {
@@ -117,13 +117,13 @@ public class IfElseStatementTheme {
 
         System.out.print("\n\n6.Определение суммы вклада и начисленных банком процент");
         int depositAmount = 300_000;
-        int percent=0;
+        int percent = 0;
         if (depositAmount < 100_000) {
-            percent=5;
+            percent = 5;
         } else if (depositAmount < 300_000) {
-            percent=7;
+            percent = 7;
         } else if (depositAmount >= 300_000) {
-            percent=10;
+            percent = 10;
         }
         int annualInterest = depositAmount * percent / 100;
         System.out.print("\nСумма вклада = " + depositAmount + ". Начисленный проц = " +
