@@ -118,21 +118,18 @@ public class CyclesTheme {
         for (int i = 0; i < 255; i++) {
             if (i == 0) {
                 System.out.printf("%5s %5s", "Dec", "Char");
-                System.out.println();
             }
             if (i < 48 && i % 2 != 0) {
                 symbol = (char) i;
-                System.out.format("%5d %5c", i, symbol);
-                System.out.println();
+                System.out.printf("\n%5d %5c", i, symbol);
             }
             if (i >= 97 && i <= 122 && i % 2 == 0) {
                 symbol = (char) i;
-                System.out.format("%5d %5c", i, symbol);
-                System.out.println();
+                System.out.printf("\n%5d %5c", i, symbol);
             }
         }
 
-        System.out.print("\n8.Проверка, является ли число палиндромом\n");
+        System.out.print("\n\n8.Проверка, является ли число палиндромом\n");
         int reversNum = 0;
         int copyNum;
         srcNum = 1234321;
@@ -154,12 +151,12 @@ public class CyclesTheme {
         int copyFirstThreeDigit = firstThreeDigit;
         int secondThreeDigit = 456;
         int copySecondThreeDigit = secondThreeDigit;
-        int tmp;
+        digit = 0;
         while (secondThreeDigit > 0) {
-            tmp = firstThreeDigit % 10;
-            sumFirstThreeDigit += tmp;
-            tmp = secondThreeDigit % 10;
-            sumSecondThreeDigit += tmp;
+            digit = firstThreeDigit % 10;
+            sumFirstThreeDigit += digit;
+            digit = secondThreeDigit % 10;
+            sumSecondThreeDigit += digit;
             firstThreeDigit /= 10;
             secondThreeDigit /= 10;
         }
@@ -171,7 +168,7 @@ public class CyclesTheme {
             System.out.println("Число не счастливое");
         }
 
-        System.out.print("\n10. Вывод таблицы умножения Пифагора\n");
+        System.out.print("\n10. Вывод таблицы умножения Пифагора\n\n");
         for (int i = 1; i <= 9; i++) {
             if (i == 1) {
                 System.out.print(" ");
@@ -184,10 +181,13 @@ public class CyclesTheme {
                 } else if (j == 1) {
                     System.out.print("|");
                 } else {
-                    System.out.printf("%5d", i * j);
+                    System.out.printf("%3d", i * j);
                 }
             }
-            System.out.println("\n-------------------------------------------");
+            if (i == 1) {
+                System.out.print("\n-------------------------------------------");
+            }
+            System.out.println();
         }
     }
 }
