@@ -17,7 +17,7 @@ public class Calculator {
         } else if (sign == '^') {
             result = 1;
             for (int i = 1; i <= num2; i++) {
-                result = result * num1;
+                result *= num1;
             }
         }
         System.out.println(num1 + " " + sign + " " + num2 + " = " + result);
