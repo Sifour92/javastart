@@ -1,31 +1,25 @@
 public class Calculator {
-    public int calculate(int num1, String sing, int num2) {
-        int sum = -1;
+    public int calculate(int num1, char sing, int num2) {
         switch (sing) {
-            case "+":
-                sum = num1 + num2;
-                break;
-            case "-":
-                sum = num1 - num2;
-                break;
-            case "*":
-                sum = num1 * num2;
-                break;
-            case "/":
-                sum = num1 / num2;
-                break;
-            case "%":
-                sum = num1 % num2;
-                break;
-            case "^":
-                sum = 1;
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 - num2;
+            case '*':
+                return num1 * num2;
+            case '/':
+                return num1 / num2;
+            case '%':
+                return num1 % num2;
+            case '^':
+                int prod = 1;
                 for (int i = 1; i <= num2; i++) {
-                    sum *= num1;
+                    prod *= num1;
                 }
-                break;
+                return prod;
             default:
                 System.out.println("Введен неверный знак");
         }
-        return sum;
+        return 0;
     }
 }
